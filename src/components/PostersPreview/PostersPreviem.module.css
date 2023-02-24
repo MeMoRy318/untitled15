@@ -1,0 +1,43 @@
+.poster{
+
+}
+.poster__row{
+    display: flex;
+    width: 100%;
+    column-gap: 2.5%;
+}
+.poster__rowBtn{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid silver;
+}
+.poster__actors{
+    font-size: 18px;
+    font-weight: bold;
+}
+.poster__actors span{
+    font-size: 16px;
+    font-weight: 400;
+}
+.poster__btnBox{
+    display: flex;
+    width: 7%;
+    justify-content: space-between;
+}
+.poster__btnBox button{
+    background: none;
+    /*padding: 7px 10px;*/
+    /*border-radius: 50%;*/
+}
+.poster__icon{
+ font-size: 32px;
+    color: silver;
+    transition-duration: .40s
+}
+.poster__icon:hover{
+    color: #003c59;
+    transition-duration: .40s
+
+}

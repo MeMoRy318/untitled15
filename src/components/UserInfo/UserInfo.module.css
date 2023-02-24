@@ -1,0 +1,41 @@
+.userInfo{
+display: flex;
+ align-items: center;
+
+}
+.userInfo__icon{
+ color: #f4f3e8;
+ font-size: 24px;
+ cursor: pointer;
+}
+
+.userInfo__icon_visibility{
+ color: #f4f3e8;
+ font-size: 24px;
+ visibility: hidden;
+}
+.userInfo__login{
+ font-size: 24px;
+ color: white;
+ padding-right: 20px;
+ cursor: pointer;
+ font-family: 'Bookman Old Style', sans-serif;
+}
+.userInfo__box_{}
+.userInfo__box{
+}
+.userInfo__info{
+ background: #f4f3e8;
+ padding: 10px;
+ line-height: 20px;
+ position: absolute;
+ right: 10px;
+ top: 70px;
+ visibility: hidden;
+}
+.userInfo__info > div{
+ margin-bottom: 2px;
+}
+.userInfo__box:hover .userInfo__info{
+ visibility: unset;
+}

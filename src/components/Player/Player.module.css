@@ -1,0 +1,20 @@
+.player__row{
+    display: flex;
+    /*margin-top: 4%;*/
+}
+.player__btn{
+display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 90vh;
+    background: #333333;
+    border: 3px solid black;
+    padding: 20px 10px 10px 10px;
+    overflow: auto;
+}
+.player__btn button{
+    background: silver;
+    border-radius: 5px;
+    padding: 5px 0;
+    margin-top: 10px;
+}

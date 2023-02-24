@@ -1,0 +1,26 @@
+.searchForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.searchForm__input{
+    height: 40px;
+    padding:0 40px 0 20px;
+    background-color: #333;
+    font-weight: 300;
+    color: white;
+    border: 1px solid rgba(0,0,0,.2);
+    font-size: 14px;
+    line-height: 17px;
+    border-radius: 5px;
+    min-width: 350px;
+}
+.searchForm__btn{
+    display: block;
+    color: white;
+    background: #141414;
+    margin-left: 15px;
+    font-size: 16px;
+
+}

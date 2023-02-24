@@ -1,0 +1,15 @@
+.poster__bg{
+    width: 18%;
+    position: relative;
+}
+.poster__img{
+width: 100%;
+}
+.poster__name{
+position: absolute;
+    bottom: 10%;
+    left: 20%;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}

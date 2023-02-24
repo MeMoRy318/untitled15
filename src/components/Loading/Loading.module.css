@@ -1,0 +1,61 @@
+.spinner_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.spinner {
+    width: 100px;
+    height: 100px;
+    border-radius: 75px;
+    background-color: aqua;
+    margin: auto;
+    animation-name: glow-spinner;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes glow-spinner {
+    0% {
+        width: 100px;
+        height: 100px;
+        opacity: 0.2;
+    }
+
+    50% {
+        width: 150px;
+        height: 150px;
+        opacity: 1;
+    }
+
+    100% {
+        width: 100px;
+        height: 100px;
+        opacity: 0.2;
+    }
+}
+
+/*
+  spinner CSS code
+  ref: https://codepen.io/alanshortis/pen/eJLVXr
+*/
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border: 0.25rem solid rgb(189, 189, 189);
+    border-top-color:blue;
+    animation: spin 1s infinite linear;
+}

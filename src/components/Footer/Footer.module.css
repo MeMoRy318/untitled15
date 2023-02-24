@@ -1,0 +1,31 @@
+.footer{
+
+}
+.footer__row{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10px;
+    background: #141414;
+}
+.footer__logo{
+font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+.footer__logo_blue{
+    color: #005381;
+}
+.footer__nav{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+.footer__nav a{
+    color: #f4f3e8;
+}
+.footer__year{
+    color: white;
+}
