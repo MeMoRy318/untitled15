@@ -25,7 +25,7 @@ const App = () => {
                 <Route path={'player/:id'} element={<PlayerPage/>}/>
                 <Route path={'filterMovie'} element={<FilterCardPage/>}>
                     <Route path={'genre/:id'} element={<MoviesListCardPage/>}/>
-                    <Route path={'filter'} element={<FilterMoviePage/>}/>
+                    <Route path={'params/:params'} element={<FilterMoviePage/>}/>
                     <Route path={'search/:query'} element={<SearchMoviePage/>}/>
                     <Route path={'favorite'} element={<FavoriteMoviePage/>}/>
                 </Route>

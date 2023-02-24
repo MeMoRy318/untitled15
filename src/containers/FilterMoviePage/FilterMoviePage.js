@@ -1,4 +1,4 @@
-import {useLocation} from "react-router-dom";
+import {useParams} from "react-router-dom";
 
 import {FilterMovies} from "../../components";
 
@@ -6,7 +6,8 @@ import {FilterMovies} from "../../components";
 const FilterMoviePage = () => {
 
 
-    const {state} = useLocation();
+    const {params} = useParams();
+    const state = JSON.parse(params)
 
 
     return (

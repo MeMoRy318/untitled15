@@ -16,13 +16,14 @@ const FilterForm = () => {
     const {genres} = useSelector(state => state.genreReducer);
     const years = createArrayYears().reverse();
 
+
     useEffect(()=>{
         dispatch(genreAction.getAllGenre())
     },[dispatch])
 
 
     const submit = async (data) => {
-        navigate('/filterMovie/filter',{state: {...data}})
+        navigate(`/filterMovie/params/${JSON.stringify(data)}`)
     };
 
 

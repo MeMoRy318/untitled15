@@ -15,11 +15,24 @@ display: flex;
  visibility: hidden;
 }
 .userInfo__login{
- font-size: 24px;
+ font-size: 22px;
  color: white;
- padding-right: 20px;
+ /*padding-right: 20px;*/
  cursor: pointer;
  font-family: 'Bookman Old Style', sans-serif;
+ font-weight: bold;
+ position: relative;
+}
+.userInfo__login:hover:after{
+ content: '';
+ display: block;
+ border-bottom: 2px solid #026598;
+ position: absolute;
+ width: 100%;
+bottom: -5px;
+}
+.userInfo__btnBox{
+ padding-right: 20px;
 }
 .userInfo__box_{}
 .userInfo__box{

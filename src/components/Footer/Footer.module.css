@@ -4,7 +4,7 @@
 .footer__row{
     display: flex;
     justify-content: space-between;
-    padding: 30px 10px;
+    padding: 35px 10px;
     background: #141414;
 }
 .footer__logo{
@@ -12,6 +12,7 @@ font-size: 22px;
     font-weight: bold;
     cursor: pointer;
     color: white;
+    /*font-family: 'Roboto', sans-serif;*/
 }
 .footer__logo_blue{
     color: #005381;

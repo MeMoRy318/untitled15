@@ -10,13 +10,15 @@ const GenreBadge = ({genres}) => {
         <>
             <span
                 style={{
-                    background:`rgb(${name.length* 30} ${name.length*20} ${name.length*10})`,
+                    background:`rgb(${name.length* 40} ${name.length*20} ${name.length*10})`,
                     display:'inline-block',
                     borderRadius:'5px',
                     color:'white',
-                    fontSize:'14px',
-                    padding:'1px 5px',
-                    cursor:'pointer'
+                    fontSize:'12px',
+                    padding:'2.5px 5px',
+                    cursor:'pointer',
+                    marginLeft:'2px'
+
             }}
                 onClick={()=>navigate(`/filterMovie/genre/${id}`)}
             >{name}</span>

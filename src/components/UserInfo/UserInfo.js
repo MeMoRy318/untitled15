@@ -17,11 +17,14 @@ const UserInfo = () => {
 
     return (
         <div className={css.userInfo}>
-            {
-                isLogin ?
-                    <div onClick={()=>dispatch(authAction.outUser())} className={css.userInfo__login}>Exit</div>:
-                    <div onClick={()=>navigate('/login')} className={css.userInfo__login}>Login</div>
-            }
+            <div className={css.userInfo__btnBox}>
+                {
+                    isLogin ?
+                        <div onClick={()=>dispatch(authAction.outUser())} className={css.userInfo__login}>Exit</div>:
+                        <div onClick={()=>navigate('/login')} className={css.userInfo__login}>Login</div>
+                }
+            </div>
+
             <div className={isLogin ? css.userInfo__box : css.userInfo__box_}>
                 <FaUserCircle className={isLogin ? css.userInfo__icon : css.userInfo__icon_visibility}/>
                 <div className={css.userInfo__info}>
