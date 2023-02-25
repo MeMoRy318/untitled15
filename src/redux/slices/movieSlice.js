@@ -275,7 +275,6 @@ const movieAction = {
     searchMovies,
     getFavoriteMovie,
     deleteFavoriteMovie,
-
 }
 
 export {movieReducer, movieAction};
