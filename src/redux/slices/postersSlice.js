@@ -44,7 +44,7 @@ const posterSlice = createSlice({
                 state.count = 1;
                 state.people = action.payload?.cast.map(m => ({
                     name:m['original_name'],
-                    img: !!m['profile_path'] ? urls.posterUrl.base + m['profile_path'] : 'https://us.123rf.com/450wm/urfandadashov/urfandadashov1805/urfandadashov180500070/urfandadashov180500070.jpg?ver=6',
+                    img: !!m['profile_path'] ? urls.posterUrl.base + m['profile_path'] : urls.notFoundPoster.base,
                     id:m['id']
                 }))
             })

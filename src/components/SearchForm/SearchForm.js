@@ -8,7 +8,7 @@ import css from './SearchForm.module.css';
 const SearchForm = () => {
 
 
-    const {register,handleSubmit,reset} = useForm();
+    const {register,handleSubmit,reset,formState:{isValid}} = useForm();
     const navigate = useNavigate();
 
 
@@ -19,15 +19,12 @@ const SearchForm = () => {
 
 
     return (
-        <form onSubmit={handleSubmit(submit)} className={css.searchForm}>
-
-            <label>
-                <input type="text" placeholder={'Search'}{...register('query',{required:true})} className={css.searchForm__input}/>
-            </label>
-
-            <button className={css.searchForm__btn}><FaSearch/></button>
-
-        </form>
+            <form onSubmit={handleSubmit(submit)} className={css.searchForm}>
+                <label>
+                    <input type="text" placeholder={'Search'}{...register('query',{required:true})} className={css.searchForm__input}/>
+                </label>
+                <button  disabled={!isValid} className={css.searchForm__btn}><FaSearch/></button>
+            </form>
     );
 };
 

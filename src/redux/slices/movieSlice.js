@@ -159,7 +159,7 @@ const moviesSlice = createSlice({
                     title:value['original_title'],
                     rating:value['vote_average'],
                     release:value['release_date'],
-                    img:urls.posterUrl.base + value['poster_path']
+                    img: !!value['poster_path'] ? urls.posterUrl.base + value['poster_path'] : urls.notFoundPoster.base,
                 }))
             })
 
@@ -172,7 +172,8 @@ const moviesSlice = createSlice({
                     title:value['original_title'],
                     rating:value['vote_average'],
                     release:value['release_date'],
-                    img:urls.posterUrl.base + value['poster_path']
+                    img: !!value['poster_path'] ? urls.posterUrl.base + value['poster_path'] : urls.notFoundPoster.base,
+
                 }))
                 state.movie = [...state.movie,...result]
             })
@@ -182,7 +183,7 @@ const moviesSlice = createSlice({
                 state.videos = []
                 const m = action.payload
                 state.movieById = {
-                    img:urls.posterUrl.base +m['poster_path'],
+                    img: !!m['poster_path'] ? urls.posterUrl.base + m['poster_path'] : urls.notFoundPoster.base,
                     budget:m['budget'],
                     genres:m['genres'],
                     id:m['id'],
@@ -192,7 +193,10 @@ const moviesSlice = createSlice({
                     release_date:m['release_date'],
                     runtime:m['runtime'],
                     retying:m['vote_average'],
-                    companies: urls.posterUrl.base + m?.['production_companies'][0]?.['logo_path']
+                    companies:!!m?.['production_companies'][0]?.['logo_path'] ?
+                        urls.posterUrl.base + m?.['production_companies'][0]?.['logo_path']:
+                        urls.notFoundPoster.base,
+
                 };
             })
 
@@ -214,7 +218,8 @@ const moviesSlice = createSlice({
                     title:value['original_title'],
                     rating:value['vote_average'],
                     release:value['release_date'],
-                    img:urls.posterUrl.base + value['poster_path'],
+                    img: !!value['poster_path'] ? urls.posterUrl.base + value['poster_path'] : urls.notFoundPoster.base
+
 
                 }))
             })
@@ -229,7 +234,7 @@ const moviesSlice = createSlice({
                     title:value['original_title'],
                     rating:value['vote_average'],
                     release:value['release_date'],
-                    img:urls.posterUrl.base + value['poster_path'],
+                    img: !!value['poster_path'] ? urls.posterUrl.base + value['poster_path'] : urls.notFoundPoster.base
 
                 }))
             })
@@ -244,7 +249,8 @@ const moviesSlice = createSlice({
                     title:value['original_title'],
                     rating:value['vote_average'],
                     release:value['release_date'],
-                    img:urls.posterUrl.base + value['poster_path'],
+                    img: !!value['poster_path'] ? urls.posterUrl.base + value['poster_path'] : urls.notFoundPoster.base
+
 
                 }))
             })
