@@ -1,15 +1,16 @@
-import {useEffect} from "react";
+import {useContext, useEffect} from "react";
 import {Carousel} from 'react-carousel-minimal';
 import {useDispatch, useSelector} from "react-redux";
 
 import {movieAction} from "../../redux/slices";
-
+import {ThemeContext} from "../../hok";
 
 const Slider = () => {
 
 
     const dispatch = useDispatch();
     const {popularMovie} = useSelector(state => state.movieReducer);
+    const {theme} = useContext(ThemeContext);
 
 
     useEffect(()=>{
@@ -28,7 +29,7 @@ const Slider = () => {
                     data={popularMovie}
                     time={4000}
                     width="100%"
-                    height="500px"
+                    height={theme === 'light' ? '450px' : '500px'}
                     captionStyle={captionStyle}
                     radius="0"
                     slideNumber={false}
@@ -42,14 +43,14 @@ const Slider = () => {
                     slideImageFit="cover"
                     thumbnails={false}
                     thumbnailWidth="100px"
-                    style={{
-                        textAlign: "center",
-                        maxHeight: "500px",
-                         // margin: "70px auto",
-                        // marginBottom:'10px'
-                    }}
+                    style={
+                        theme === 'light' ?
+                    {textAlign: "center", maxHeight: "500px", maxWidth:"1200px", margin: "140px auto 60px auto",} :
+                     {textAlign: "center", maxHeight: "500px",}
+                }
                 />
             }
+
         </div>
     );
 };

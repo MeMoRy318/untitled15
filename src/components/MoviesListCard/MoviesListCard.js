@@ -28,9 +28,11 @@ const MoviesListCard = ({id}) => {
     return (
         <div className={css.movie__column}>
 
-            {isLoading ? <Loading width={65} height={100}/> : !!filterMovie.length && filterMovie.map(movie => <MovieListCard key={movie.id} movie={movie}/>)}
+            {isLoading ?
+                <Loading width={65} height={100}/> :
+                !!filterMovie.length && filterMovie.map(movie => <MovieListCard key={movie.id} movie={movie}/>)}
 
-            {total_pages > 1 && <Pagination setQuery={setQuery}/>}
+            { !!filterMovie.length && total_pages > 1 && <Pagination setQuery={setQuery}/>}
 
         </div>
     );

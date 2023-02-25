@@ -13,6 +13,7 @@ display: flex;
     overflow: auto;
 }
 .player__btn button{
+    box-shadow: 1px 1px 3px rgba(103, 103, 103, 0.4);
     background: silver;
     border-radius: 5px;
     padding: 5px 0;

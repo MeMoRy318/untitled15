@@ -23,9 +23,12 @@ const SearchMovies = ({query}) => {
     return (
         <div className={css.movie__column}>
 
-            {isLoading ? <Loading height={100} width={65}/> : !!search.length && search.map(movie => <MovieListCard key={movie.id} movie={movie}/>)}
+            {isLoading ?
+                <Loading height={100} width={65}/> :
+                !!search.length && search.map(movie => <MovieListCard key={movie.id} movie={movie}/>)
+            }
 
-            {total_pages > 1 && <Pagination setQuery={setQuery}/>}
+            {!!search.length && total_pages > 1 && <Pagination setQuery={setQuery}/>}
 
         </div>
     );

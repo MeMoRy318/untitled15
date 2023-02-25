@@ -25,6 +25,7 @@ const MoviesList = () => {
         <div className={css.movie}>
             {isLoading ? <Loading width={100} height={100}/> :
                 <div className={css.container}>
+                    
                     <div className={css.movie__btnHeader}>
                         <button onClick={() => navigate('/filterMovie/genre/28')}>See everything</button>
                     </div>

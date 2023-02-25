@@ -23,3 +23,4 @@ export * from './Loading/Loading';
 export * from './FavoriteMovies/FavoriteMovies';
 export * from './LoginForm/LoginForm';
 export * from './RegisterForm/RegisterForm';
+export * from './SwitchToggle/SwitchToggle';

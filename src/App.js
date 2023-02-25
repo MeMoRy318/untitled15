@@ -7,7 +7,7 @@ import {
     FilterMoviePage, LoginFormPage,
     MovieInfoPage,
     MoviesListCardPage,
-    MoviesPage,
+    MoviesPage, NotFoundPage,
     PlayerPage, RegisterFormPage,
     SearchMoviePage
 } from "./containers";
@@ -31,6 +31,7 @@ const App = () => {
                 </Route>
                 <Route path={'register'} element={<RegisterFormPage/>}/>
                 <Route path={'login'} element={<LoginFormPage/>}/>
+                <Route path={'*'} element={<NotFoundPage/>}/>
             </Route>
         </Routes>
     );

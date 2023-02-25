@@ -1,9 +1,10 @@
-import css from './UserInfo.module.css';
-
-import {FaUserCircle} from "react-icons/fa";
-import {useNavigate} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
+import {useNavigate} from "react-router-dom";
+import {FaUserCircle} from "react-icons/fa";
+
+import css from './UserInfo.module.css';
 import {authAction} from "../../redux/slices";
+import {SwitchToggle} from "../SwitchToggle/SwitchToggle";
 
 
 const UserInfo = () => {
@@ -12,11 +13,11 @@ const UserInfo = () => {
     const navigate = useNavigate();
     const {user,isLogin} = useSelector(state => state.authReducer);
     const dispatch = useDispatch();
-    console.log(user);
 
 
     return (
         <div className={css.userInfo}>
+            <SwitchToggle/>
             <div className={css.userInfo__btnBox}>
                 {
                     isLogin ?

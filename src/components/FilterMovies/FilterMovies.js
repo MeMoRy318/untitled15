@@ -1,10 +1,11 @@
 import {useDispatch, useSelector} from "react-redux";
+import {useSearchParams} from "react-router-dom";
 import {useEffect} from "react";
+
 
 import {Loading, MovieListCard, Pagination} from "../index";
 import {movieAction} from "../../redux/slices";
 import css from "./FilterMovies.module.css";
-import {useSearchParams} from "react-router-dom";
 
 
 const FilterMovies = ({state}) => {

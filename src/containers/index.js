@@ -8,3 +8,4 @@ export * from './SerchMoviePage/SearchMoviePage';
 export * from './FavoriteMoviePage/FavoriteMoviePage';
 export * from './LoginFormPage/LoginFormPage';
 export * from './RegisterFormPage/RegisterFormPage';
+export * from './NotFoundPage/NotFoundPage';

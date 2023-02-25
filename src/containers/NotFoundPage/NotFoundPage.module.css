@@ -1,0 +1,56 @@
+.notFound{
+
+}
+.notFound__bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(https://www.reactiongifs.us/wp-content/uploads/2015/04/nothing_to_see_here_naked_gun.gif) no-repeat center center;
+    background-size: cover;
+
+}
+.notFound__body{
+     display: flex;
+    justify-content: flex-end;
+    padding: 50px 0;
+    color: white;
+    position: relative;
+}
+.notFound__column{
+    display: flex;
+    flex-direction: column;
+    /*max-width: 50%;*/
+}
+.notFound__error{
+    font-size: 200px;
+    font-weight: bold;
+    margin-bottom: 40px;
+
+}
+.notFound__title{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    width: 70%;
+    line-height: 35px;
+}
+.notFound__text{
+    width: 60%;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+.notFound__buttonBox{
+
+}
+.notFound__bt{
+padding: 14px 30px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background: none;
+    color: white;
+    transition: 300ms;
+}
+.notFound__bt:hover{
+    background: rgba(255, 255, 255, 0.5);
+}
