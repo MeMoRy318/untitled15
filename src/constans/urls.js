@@ -1,7 +1,7 @@
 const posterUrl = 'https://image.tmdb.org/t/p/original/';
 const youTube = 'https://www.youtube.com/embed/'
 const baseURL = 'https://api.themoviedb.org/3';
-const notFoundPoster='https://us.123rf.com/450wm/urfandadashov/urfandadashov1805/urfandadashov180500070/urfandadashov180500070.jpg?ver=6';
+const notFoundPoster='https://www.salonlfc.com/wp-content/uploads/2018/01/image-not-found-scaled-1150x647.png';
 const list = '/list';
 const credits = '/credits'
 const genre = '/genre';

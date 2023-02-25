@@ -3,13 +3,15 @@
     position: relative;
 }
 .poster__img{
-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    min-height: 320px;
 }
 .poster__name{
 position: absolute;
     bottom: 10%;
-    left: 20%;
+    left: 10%;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
 }

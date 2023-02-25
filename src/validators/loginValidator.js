@@ -5,10 +5,10 @@ const loginValidator = Joi.object({
         'string.pattern.base':'email некоректний',
         'string.empty':'Поле пусте'
     }),
-    password:Joi.string().regex(/(?=.*[a-z])[0-9a-zA-Z!@#$%^&*]{8,}/).required().messages({
+    password:Joi.string().required().messages({
         'string.pattern.base':'Пароль має бути не менше 8 символів',
         'string.empty':'Поле пусте'
-    })
+    }),
 
 })
 

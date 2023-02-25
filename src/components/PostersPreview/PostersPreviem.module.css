@@ -33,7 +33,7 @@
 }
 .poster__icon{
  font-size: 32px;
-    color: silver;
+    color: #afafaf;
     transition-duration: .40s
 }
 .poster__icon:hover{
