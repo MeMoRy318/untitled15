@@ -4,8 +4,8 @@ import {Link} from "react-router-dom";
 
 const BurgerMenu = () => {
 
-    return (
 
+    return (
         <div className="hamburger-menu">
             <input id="menu__toggle" type="checkbox"/>
             <label className="menu__btn" htmlFor="menu__toggle">
