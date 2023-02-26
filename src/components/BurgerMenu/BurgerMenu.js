@@ -16,6 +16,8 @@ const BurgerMenu = () => {
                 <li><Link className="menu__item" to={'/'}>Home</Link></li>
                 <li><Link className="menu__item" to={'/filterMovie/genre/all'}>movie</Link></li>
                 <li><Link className="menu__item" to={'/filterMovie/favorite'}>Favorite</Link></li>
+                <li><Link className="menu__item" to={'/'}>Contact</Link></li>
+                <li><Link className="menu__item" to={'/'}>Twitter</Link></li>
             </ul>
         </div>
     );
