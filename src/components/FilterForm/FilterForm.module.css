@@ -230,43 +230,21 @@ display: flex;
     .filterForm__buttonBox{
         height: 31px;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        /*flex-direction: column;*/
         justify-content: flex-end;
+        column-gap: 5%;
     }
     .filterForm__buttonApply{
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        white-space: nowrap;
-        color: white;
-        font-weight: 500;
         padding: 0 15px;
-        font-size: 16px;
-        line-height: 16px;
-        border: 1px solid transparent;
-        overflow: hidden;
-        border-radius: 5px;
-        background-color: #005381;
-        /*transition: color .3s ease,background-color .3s ease,border-color .3s ease;*/
         margin-bottom: 0;
 
     }
 
 
-    .filterForm__buttonApply:hover{
-        transform: scale(1.01);
-        transition: 200ms;
-        box-shadow: 2px 2px 6px rgba(103, 103, 103, 0.4);
-    }
 
-    .filterForm__buttonApply:active {
-        transform: scale(1);
-        transition: 200ms;
-        box-shadow: none;
-
-    }
     .filterForm__buttonReset{
-        display: none;
+        padding: 0 15px;
 
     }
 
