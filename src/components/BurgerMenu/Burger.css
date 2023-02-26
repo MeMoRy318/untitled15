@@ -70,3 +70,8 @@
 .menu__item:hover {
     background-color: #CFD8DC;
 }
+@media (min-width: 992px) and (max-width: 1200px) {
+    .menu__btn {
+       display: none;
+    }
+}

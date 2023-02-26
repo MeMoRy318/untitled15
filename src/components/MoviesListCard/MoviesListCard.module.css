@@ -3,3 +3,9 @@
 flex-direction: column;
     width: 65%;
 }
+@media (min-width: 992px) and (max-width: 1200px){
+    .movie__column{
+
+        width: 80%;
+    }
+}

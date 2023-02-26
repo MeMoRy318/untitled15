@@ -30,3 +30,8 @@ font-size: 22px;
 .footer__year{
     color: white;
 }
+@media (min-width: 992px) and (max-width: 1200px){
+    .footer__nav{
+        width: 20%;
+    }
+}

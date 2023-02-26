@@ -15,13 +15,13 @@ const Header = () => {
             <div className={css.header__row}>
                 <BurgerMenu/>
                 <div
-                    onClick={()=>navigate('/')}
+                    onClick={() => navigate('/')}
                     className={css.header__logo}>
                     <span className={css.header__logo_blue}>KINO</span>
                     <span className={css.header__logo_white}>MOVIE</span></div>
             </div>
 
-                <SearchForm/>
+            <SearchForm/>
 
             <div>
                 <UserInfo/>

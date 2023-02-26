@@ -150,3 +150,125 @@ display: flex;
     box-shadow: none;
 
 }
+@media (min-width: 992px) and (max-width: 1200px){
+    .filterForm{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .filterForm__sticky{
+        position:fixed;
+        top:9%;
+        background: #2f2d2d;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 50;
+        padding: 7px 0;
+    }
+    .filterForm h1{
+        display: none;
+
+    }
+    .filterForm h2{
+        font-size: 12px;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 5px;
+        color: white;
+    }
+    .filterForm__text{
+        display: none;
+    }
+    .filterForm div{
+        margin-bottom: 0;
+    }
+
+    .filterForm div:nth-child(5){
+        margin-bottom: 0;
+    }
+    .filterForm__inputBoxYear{
+
+    }
+    .filterForm__title{
+        width: 100%;
+        text-align:center;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .filterForm__inputBoxVote{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .filterForm__inputVote{
+        border: 1px solid rgba(0,0,0,.2);
+        border-radius: 5px;
+        padding: 0 5px;
+        height: 20px;
+        font-size: 12px;
+        line-height: 17px;
+        background: white;
+        width: 45%;
+    }
+    .filterForm__inputBoxSort{
+
+    }
+    .filterForm__inputSort{
+        width: 90%;
+        border: 1px solid rgba(0,0,0,.2);
+        border-radius: 5px;
+        padding: 0 15px;
+        height: 20px;
+        font-size: 12px;
+        line-height: 17px;
+        background: white;
+    }
+    .filterForm__buttonBox{
+        height: 31px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .filterForm__buttonApply{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+        color: white;
+        font-weight: 500;
+        padding: 0 15px;
+        font-size: 16px;
+        line-height: 16px;
+        border: 1px solid transparent;
+        overflow: hidden;
+        border-radius: 5px;
+        background-color: #005381;
+        /*transition: color .3s ease,background-color .3s ease,border-color .3s ease;*/
+        margin-bottom: 0;
+
+    }
+
+
+    .filterForm__buttonApply:hover{
+        transform: scale(1.01);
+        transition: 200ms;
+        box-shadow: 2px 2px 6px rgba(103, 103, 103, 0.4);
+    }
+
+    .filterForm__buttonApply:active {
+        transform: scale(1);
+        transition: 200ms;
+        box-shadow: none;
+
+    }
+    .filterForm__buttonReset{
+        display: none;
+
+    }
+
+
+}

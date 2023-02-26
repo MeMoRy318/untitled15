@@ -32,3 +32,17 @@ height: 70px;
 .header__logo_white{
     color: white;
 }
+@media (min-width: 992px) and (max-width: 1200px) {
+    .header{
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .header__row{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 ;
+    }
+}

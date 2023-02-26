@@ -24,3 +24,21 @@
     font-size: 16px;
 
 }
+@media (min-width: 992px) and (max-width: 1200px) {
+    .searchForm{
+        justify-content: center;
+        width: auto;
+    }
+    .searchForm__input{
+        height: 40px;
+        padding:0 20px 0 15px;
+        background-color: #333;
+        font-weight: 300;
+        color: white;
+        border: 1px solid rgba(0,0,0,.2);
+        font-size: 14px;
+        line-height: 17px;
+        border-radius: 5px;
+        min-width: 300px;
+    }
+}
