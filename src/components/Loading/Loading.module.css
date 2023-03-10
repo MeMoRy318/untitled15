@@ -36,11 +36,6 @@
     }
 }
 
-/*
-  spinner CSS code
-  ref: https://codepen.io/alanshortis/pen/eJLVXr
-*/
-
 @keyframes spin {
     0% {
         transform: rotate(0deg);
